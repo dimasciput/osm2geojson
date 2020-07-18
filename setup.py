@@ -1,8 +1,9 @@
+import io
 from os import path
 from setuptools import setup
 
 dirname = path.abspath(path.dirname(__file__))
-with open(path.join(dirname, 'README.md'), encoding='utf-8') as f:
+with io.open(path.join(dirname, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 def parse_requirements(filename):
